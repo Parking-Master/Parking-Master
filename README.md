@@ -7,7 +7,7 @@
 
 ### Welcome! > Choose from OVER 10 Levels > Tips & Unlocks every level > No ads > Free to play
 
-Play at [parkingmaster.w3spaces.com](https:/parkingmaster.w3spaces.com)
+Play at [parkingmaster.w3spaces.com](https://parkingmaster.w3spaces.com)
 
 +1 Point for every level
 
