@@ -1,16 +1,30 @@
-### Hi there 👋
+## for further releases, contact [parkingmaster@email.com](mailto:parkingmaster@email.com&subject=Later%20releases?&body=Hello,%20I'm%20contacting%20about,%20when's%20the%20next%20release?%0D%0AThanks,%20%91Name%93)
+# Parking Master Laptop (v.1.1) Upcoming release 8/14/2021
 
-<!--
-**Parking-Master/Parking-Master** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# Parking Master v.0.1 released! 8/1/2021 10:00PM ET
 
-Here are some ideas to get you started:
+# Parking Master Desktop released! 8/1/2021 10:00PM ET
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### Welcome! > Choose from OVER 10 Levels > Tips & Unlocks every level > No ads > Free to play
+
+Play at [parkingmaster.w3spaces.com](https:/parkingmaster.w3spaces.com/)
+
++1 Point for every level
+
++2 Points for [BlueSpots]()
+
+Unlock gadgets and Tip every level
+
+No ads (NON AD SUPPORTED)
+
+Exchange points for awesome mods!
+
+Learn [how to play]() like a pro!
+
+### Can you pass the 4th level?
+
+impossible levels with barriers surrounding!
+
+### Amazing cars every 2 levels
+
+You started out with a junky car, what about the rest?
