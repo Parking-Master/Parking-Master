@@ -1,4 +1,4 @@
-## for further releases, contact [parkingmaster@email.com](mailto:parkingmaster@email.com?subject=Later%20releases?&body=Hello,%20I'm%20contacting%20about,%20when's%20the%20next%20release?%0D%0A%0D%0AThanks,%20-[Name])
+## for further releases, contact [parkingmaster@email.com]()
 # Parking Master Laptop (v.1.1) Upcoming release 8/14/2021
 
 # Parking Master v.0.1 released! 8/1/2021 10:00PM ET
