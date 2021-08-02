@@ -2,8 +2,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="/Parking-Master/assets/css/style.css?v=30752ecb7f662194a0c5430063059f7d2a6be5af">
-    <link rel="stylesheet" type="text/css" href="/Parking-Master/assets/css/print.css" media="print">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
