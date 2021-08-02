@@ -19,26 +19,12 @@
 <meta property="twitter:title" content="Parking Master">
 <script type="application/ld+json">
 {"description":"Welcome! Play over 10 levels &gt; Unlocks &amp; Tips every level &gt; Play at parkingmaster.w3spaces.com","url":"https://parking-master.github.io/Parking-Master/","@type":"WebSite","headline":"Parking Master","name":"Parking-Master","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-
-    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
-
-<!-- Setup Google Analytics -->
-
-
-
-<!-- You can set your favicon here -->
-<!-- link rel="shortcut icon" type="image/x-icon" href="/Parking-Master/favicon.ico" -->
-
-<!-- end custom head snippets -->
-
   </head>
 
   <body>
     <div id="container">
       <div class="inner">
 
-        <header>
           <h1>Parking Master</h1>
           <h2>Welcome! Play over 10 levels &gt; Unlocks &amp; Tips every level &gt; Play at parkingmaster.w3spaces.com</h2>
         </header>
@@ -47,9 +33,6 @@
 	
         </section>
         <hr>
-        <section id="main_content">
-          <h1 id="parking-master">Parking Master</h1>
-
 <h3 id="for-further-releases-contact-parkingmasteremailcom">for further releases, contact <a href="mailto:parkingmaster@email.com">parkingmaster@email.com</a></h3>
 
 <h6 id="parking-master-laptop-version-upcoming-release-882021"><strong>Parking Master Laptop version Upcoming release 8/8/2021</strong></h6>
@@ -81,14 +64,9 @@
 <h3 id="amazing-cars-every-2-levels">Amazing cars every 2 levels</h3>
 
 <p>You started out with a junky car, what about the rest?</p>
-
-        </section>
-
-        <footer>
         
           Parking-Master is maintained by <a href="https://github.com/Parking-Master">Parking-Master</a><br>
-        
-        </footer>
+       
 
       </div>
     </div>
