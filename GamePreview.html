@@ -8,9 +8,6 @@
   Your browser does not support the canvas element.
 </canvas>
 </div>
-<button style="position:absolute;left:985px;top:577px;" class="buttonDrive" onmouseout="mouseUp(); pauseAudio();" onmousedown="mouseDown(); playAudio();" onmouseup="mouseUp(); pauseAudio();">Drive<span id="hoverEffect">&nbsp&#8594</span></button>
-
-<button class="buttonPark" onclick="parkDetector()" style="position: absolute;left: 985px; top: 485px;"><strong>Park&nbsp&#10003</strong></button>
 </div>
 <audio volume="1" id="crash-effect">
   <source src="https://user-images.githubusercontent.com/85320577/125838045-3059b984-e351-41df-853b-c320a07c4f5e.mov">
@@ -21,6 +18,7 @@
 </script>
 <button onmousedown="mouseRightDown();" onmouseup="mouseRightUp();" onmouseout="mouseRightUp();" id="arrowright"></button>
 <button onmousedown="mouseLeftDown();" onmouseup="mouseLeftUp();" onmouseout="mouseLeftUp();" id="arrowleft"></button>
+<button class="buttonPark" onclick="parkDetector()" style="position: absolute;left: 985px; top: 485px;"><strong>Park&nbsp&#10003</strong></button>
 <button style="position:absolute;left:10%;top:20%;" onmousedown="mouseDown();" onmouseup="mouseUp();" onmouseout="mouseUp();" class="buttonDrive">Drive</button>
 <button style="position:absolute;left:10%;top:15%;" onmousedown="mouseReverseDown();" onmouseup="mouseReverseUp();" onmouseout="mouseReverseUp();" class="buttonReverse">Back</button>
 <!-- Full JavaScript -->
