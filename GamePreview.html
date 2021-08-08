@@ -1,308 +1,415 @@
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-  <div id="liveData">
-   <!--
-     ""2021 PARKING MASTER, ALL RIGHTS RESERVED. 
-     ANY TYPE OF COPIED CONTENT IS SUBJECT TO COPYRIGHT. 
-     DO NOT CONTINUE TO COPY THE BELOW CONTENT.""
-      -->
-         <title>Parking Master</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width" />
-    <meta http-equiv="default-style" content="Game is temporarily closed | Parking Master|stylesheet/css">
-    <meta name="keywords" content="parkingmaster, Parking Master, w3spaces, w3spaces.com, Web-games, fun car game"/>
-    <meta name="subject" content="Parking Master | Fun web-game!">
-    <meta name="url" content="https://parkingmaster.w3spaces.com/">
-    <meta name="author" content="Parking Master, parkingmaster@email.com">
-    <meta name="owner" content="Jackson C.">
-    <meta property="og:title" content="Parking Master > Fun Webgame" />
-    <meta property="og:url" content="https://parkingmaster.w3spaces.com/" />
-    <meta property="og:image" content="https://user-images.githubusercontent.com/85320577/125539201-f967db44-f34e-4a43-a51a-b1b84708dce4.jpeg" />
-    <meta property="og:description" content="Play free > No ads > Over 10 levels > Tips and unlocks" />
-    <meta property="og:locale" content="en_US" />
-   <link rel="icon" href="https://user-images.githubusercontent.com/85320577/125539201-f967db44-f34e-4a43-a51a-b1b84708dce4.jpeg">
+  <!-- DEAR READER, DO NOT CONTINUE TO COPY AND PASTE THE BELOW CONTENT,
+       COPIED CONTENT IS SUBJECT TO COPYRIGHT. THIS IS A WARNING -->
+       
+<!doctype html>
+<html>
+  <iframe id="load-bar" src="loadbar.html" scrolling="no" style="border: 0; width: 100%; position: absolute; top: -7px;"></iframe>
+  <div id="screenshot"><a href="Parking-Master-HighScore.png" download><img src="camera1600.png" width="5%" style="position: absolute; left: 640px;" /></a></div>
+    <head>
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Welcome > Play Parking-Master! Over 10 levels, choose a fun game > Unlocks & Tips every level.">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+    <title>Parking Master LVL. 1</title>
+    <p id="popup_error_pause"></p>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="GameIco-48.jpeg" />
 </head>
-   <h3 id="header-style">Parking Master</h3>
-<body onload="playAudio(); startIdle(); openFullscreen();">
-  
-<p id="paraGraph1">Welcome</p>
-<div id="aud_wdgt-html8184">
+
+<body id="body" onload="getPointsValue(); deviceWidth();" onbeforeunload="confirmUnload()">
+  <iframe src="new-file-1.html" style="border:none; position:absolute; left: 53%; margin-left: -10%; top: 11%;" scrolling="no" width="20%"></iframe>
+  <h3 id="header-style"><div style="left: 1px; top: 1px; font-family: monospace; font-size: 0.8em;"></div>Parking Master</h3>
+  <button type="button" class="info-button" onclick="openHelpModal()"><p class="paraGraph1"><span id="spanner" title="How to Play?"><b>&#128712</b></span></button>
+<input style="display: none;" type="text" id="pxWidth" value="null" />
+  <script>
+        if ( /Android|webOS|iPhone|iPad|Mahc|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+location.replace("E5error404.html");
+        }
+function deviceWidth() {
+  var width = window.innerWidth;
+ document.getElementById("pxWidth").value = width;
+
+ var pxWidth = document.getElementById("pxWidth").value;
+
+ if (pxWidth.includes("19")) {
+document.getElementById("body").style.width = "100%";
+  }
+ document.getElementById("pxWidth").value = width;
+
+ var pxWidth = document.getElementById("pxWidth").value;
+
+ if (pxWidth.includes("15") || pxWidth.includes("150") || pxWidth.includes("16")) {
+document.getElementById("body").style.width = "94%";
+  }
+}
+  </script>
+ <!-- DEAR READER, DO NOT CONTINUE TO COPY AND PASTE THE BELOW CONTENT,
+       COPIED CONTENT IS SUBJECT TO COPYRIGHT. THIS IS A WARNING -->
+
+<!-- Use "openHelpModal()" to display alert -->
+
+<div id="myModal2" class="modal2">
+
+  <div class="modal-content2">
+    <div class="close2">OK</div>
+    <p id="subject2" style="font-size:20px;"><strong>How to play</strong></p>
+    <p id="description2"><ol id="directions"><p>1. drive into the Outlined Square</p><p>2. do not crash through the process or the game ends!</p><p>3. press "<img src="park-button.png" width="8%" />" when you parked in the correct spot.</p></ol></p>
+  </div>
+
+</div>
+
+<script>
+var modal2 = document.getElementById("myModal2");
+
+var span2 = document.getElementsByClassName("close2")[0];
+
+function openHelpModal() {
+  modal2.style.display = "block";
+}
+
+span2.onclick = function() {
+  modal2.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal2.style.display = "none";
+  }
+}
+</script>
+
+
+  <!-- DEAR READER, DO NOT CONTINUE TO COPY AND PASTE THE BELOW CONTENT,
+       COPIED CONTENT IS SUBJECT TO COPYRIGHT. THIS IS A WARNING -->
+
+<!-- Use "openModal()" to display alert -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <div class="close">OK</div>
+    <p id="subject" style="font-size:20px;"><strong>Game Over</strong></p>
+    <p id="description">Your score: <span id="score">--</span>&nbsp&nbsp<form id="retart_button_alert" action="index.html"><input class="mybutton6" type="submit" value="&#8634" /></p>
+  </div>
+
+</div>
+
+<script>
+var modal = document.getElementById("myModal");
+
+var btn = document.getElementById("myBtn");
+
+var span = document.getElementsByClassName("close")[0];
+
+function openModal() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+<!-- openXModal() -->
+
+<div oncontextmenu="return false;" id="myModal-four" class="modal-four">
+
+  <div class="modal-content-four">
+    <div class="close-four">OK</div>
+    <p id="subject-four" style="font-size:20px;"><strong>You Didn't park</strong>&nbsp&nbsp<img style="position: absolute;" src="X-Mark.png" width="2%" /></p>
+    <p id="description-four" style="z-index: 1;">Try <span style="color: red"><u>clicking again</u></span> or get <span style="color: red"><u>closer</u></span> to the spot.</p>
+  </div>
+
+</div>
+
+<script>
+var modalfour = document.getElementById("myModal-four");
+
+var btn = document.getElementById("myBtn");
+
+var spanfour = document.getElementsByClassName("close-four")[0];
+
+function openXModal() {
+  modalfour.style.display = "block";
+}
+
+spanfour.onclick = function() {
+  modalfour.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modalfour.style.display = "none";
+  }
+}
+</script>
+<style>
+ .modal-four {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.modal-content-four {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 20%;
+  height: 20%;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.close-four {
+  font-size:20px;
+  width: 80px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid black;
+  position: absolute;
+  left: 50%;
+  margin-left: -40px;
+  top: 28%;
+}
+
+.close-four:hover,
+.close-four:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+
+<div id="myModal-three" class="modal-three">
+
+  <div class="modal-content-three">
+    <div class="close-three">OK</div>
+    <p id="subject-three" style="font-size:20px;"><strong>You Parked!</strong>&nbsp&nbsp<span id="check_video"></span></p>
+    <p id="description-three">Now click "<img src="next-level-btn.png" width="9%" />"</p>
+  </div>
+
+</div>
+
+<script>
+var modalthree = document.getElementById("myModal-three");
+
+var btn = document.getElementById("myBtn");
+
+var spanthree = document.getElementsByClassName("close-three")[0];
+
+function openCheckModal() {
+  modalthree.style.display = "block";
+}
+
+spanthree.onclick = function() {
+  modalthree.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modalthree.style.display = "none";
+  }
+}
+</script>
+<style>
+ .modal-three {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.modal-content-three {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 20%;
+  height: 20%;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.close-three {
+  font-size:20px;
+  width: 80px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid black;
+  position: absolute;
+  left: 50%;
+  margin-left: -40px;
+  top: 28%;
+}
+
+.close-three:hover,
+.close-three:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+<!-- Menu Widget -->
+<div id="drop-down-menu_548">
+ <div id="musicButton">
+  <input class="mybutton6" type="submit" value="&#128266"
+    onclick="playMusic();"
+  />
+  </div>
+</form>
+<span><form action="index.html">
+  <input id="foo" type="text" name="q" />
+  <input class="mybutton6" type="submit" value="&#8634"
+    onclick="return confirm('Restart?')"
+  />
+</form>
+<div id="boxer"></div>
+<div id="pause-game">
+<form action="javascript:Pause()">
+  <input id="fooooo" type="text" name="q" />
+<input class="mybutton6" type="submit" value="&#10074&#8201&#10074" /></span>
+</form>
+</div>
+<audio src="https://user-images.githubusercontent.com/85320577/125519924-b98019ec-a740-4083-9ccb-2a3c9769b06b.mov" autoplay />
+<style>
+#foo, #foooo, #fooooo {
+display: none;
+}
+.mybutton6 {
+border: 2px solid #fafafa;
+background-color: white;
+width: 100px;
+}
+.close-menu {
+color: red;
+font-weight: bold;
+text-decoration: none;
+border: 2px solid #fafafa;
+background-color: white;
+width: 100px;
+}
+</style>
+<script>
+  window.onload = function(){
+  document.getElementById("score").innerHTML = "0pts";
+  }
+function Pause() {
+document.getElementById("hidebuttons").style.visibility = 'hidden';
+document.getElementById("status-button-bar").style.visibility = 'hidden';
+document.getElementById("pause").innerHTML = '<a style="overflow: auto;font-size: 3em; color: white;text-decoration:none; position: absolute; left: 50%; top: 29pc;margin-left: -20px;" href="javascript:unPause()">&#10074&#8201&#10074</a>';
+}
+function unPause() {
+document.getElementById("pause").innerHTML = '';
+document.getElementById("hidebuttons").style.visibility = 'visible';
+document.getElementById("status-button-bar").style.visibility = 'visible';
+}
+function closeMenu_xty() {
+box.innerHTML = '';
+document.getElementById("closer").innerHTML = '';
+}
+function close() {
+document.getElementById("closer").innerHTML = '<form action="javascript:closeMenu_xty()"><input style="display: none;" type="text" name="q" /><input class="close-menu" type="submit" value="&#10005" /></form>';
+}
+</script>
+</div>
 <!-- \STARTPAGE AUDIO WIDGET.html\ -->
-<audio id="myAudio" loop>
+<audio volume="0.1" id="myMusic" loop>
   <source src="https://user-images.githubusercontent.com/85320577/125461243-a9dd91b0-0eb5-4e4b-8f02-a1fd252fa5f2.mov">
   Your browser does not support the audio element.
 </audio>
-<script>
-  var d = document.getElementById("myAudio"); 
-function playAudio() {
-  d.play();
-  document.getElementById("pause-audio_9474").innerHTML = '<a id="audio-play_9573" href="javascript:pauseAudio();"><img src="https://user-images.githubusercontent.com/85320577/125478656-269b1674-a9d7-4dd3-9d1f-57ce617dbaa1.png" width="5%" /></a>';
-}
-function pauseAudio() {
-  d.pause();
-  d.currentTime = 0;
-    document.getElementById("pause-audio_9474").innerHTML = '<a id="audio-play_9572" href="javascript:playAudio();"><img src="https://user-images.githubusercontent.com/85320577/125479052-7decfff4-fd49-4a4a-996f-7f190d3bfdc5.png" width="5%" /></a>';
-
-} 
-</script>
-<a id="pause-audio_9474" href="javascript:playAudio();"><img id="audio-play_9572" src="https://user-images.githubusercontent.com/85320577/125479052-7decfff4-fd49-4a4a-996f-7f190d3bfdc5.png" width="5%" /></a>
-<style>
-#audio-play_9572 {
-    background-color: transparent;
-}
-#audio-play_9573 {
-    background-color: transparent;
-}
-</style>
+<script src="audio.js"></script>
 <!-- /END OF STARTPAGE AUDIO WIDGET/ -->
-</div>
-<span style="display: none;" id="aval-score"></span>
-  <div id="buttons">
-<div id="button">
-    <button style="width: 200px; text-align: center; position: relative; left: 138%; top: 1px;" class="button" type="button" title="Start the game" onmousedown="openFullscreen()" onclick="setTimeout(replaceContent(), 500);">Start</button>
 
-<form action="https://parkingmaster.w3spaces.com/trending-games.html">
-    <input style="width: 100px; position: absolute; left: 180%; top: 1px;" class="button" type="submit" title="Trending games for your entertainment" value="Trending" />
-</form>
-<form action="mod-downloads.html" id="mods">
-    <input style="font-weight: 600; width: 70px; position: absolute; left: 201%; top: 1px;" class="button" type="submit" title="Exchange awesome mods with your points" value="Mods&#128498" />
-</form>
-    <button style="width: 70px; text-align: center; position: absolute; left: 216%; top: 1px;" class="button" type="button" title="Guide or how to play" onclick="">Help</button>
-<form action="https://github.com/Parking-Master" target="_BLANK">
-    <button type="submit" style="font-weight: 600; width: 40px; position: absolute; left: 231%; top: 1px;" class="button" title="Github"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></button>
-</form>
-    <button style="font-weight: 600; width: 40px; position: absolute; left: 240%; top: 1px;" class="button" type="button" title="Apply for a free job" onclick="jobAppli()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg></button>
 
 </div>
+<!--Game-->
+<div unselectable="on">
+<canvas id="myCanvas" width="600" height="400" style="border:3px solid #FF0000;">
+  Your browser does not support the canvas element.
+</canvas>
 </div>
-<span id="iframe4"></span>
-<img style="position: relative: left: 50%;" class="startPage" src="https://user-images.githubusercontent.com/85320577/123474722-620b1100-d5c8-11eb-9085-adca15aa0e86.jpeg" alt="Car Drifting" width="600px" height="400px" />
-<span style="display: none;" id="url"></span>
+<p id="pause"></p>
+<div id="hidebuttons">
+<button style="position:absolute;left:985px;top:577px;" class="buttonDrive" onmouseout="mouseUp(); pauseAudio();" onmousedown="mouseDown(); playAudio();" onmouseup="mouseUp(); pauseAudio();">Drive<span id="hoverEffect">&nbsp&#8594</span></button>
+<audio id="myAudio" loop>
+  <source src="https://user-images.githubusercontent.com/85320577/124203140-09e17c80-daaa-11eb-88e9-9066a6def61c.mov">
+  Your browser does not support the audio element.
+</audio>
+<audio volume="0.1" id="myAudio2">
+  <source src="https://user-images.githubusercontent.com/85320577/125540240-79f88ae6-6c2c-4b92-baf7-4d3b24da010b.mov">
+  Your browser does not support the audio element.
+</audio>
 
+
+<button class="buttonPark" onclick="parkDetector()" style="position: absolute;left: 985px; top: 485px;"><strong>Park&nbsp&#10003</strong></button>
+</div>
+<div style="font-family: Verdana, Arial; position: absolute; left: 670px; top: 200px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+  <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
+</svg> Unlock Rotate-Steering at level 2.</div>
+<div id="restart-button_8377"></div>
+<audio volume="1" id="crash-effect">
+  <source src="https://user-images.githubusercontent.com/85320577/125838045-3059b984-e351-41df-853b-c320a07c4f5e.mov">
+  Your browser does not support the audio element.
+</audio>
+  <script>
+
+</script>
+<!-- Status Bar -->
+<div id="status-button-bar">
+<div id="speedstatus"><span id="speedbar">0</span><span id="mph">&nbspMPH</span><br><span id="pts" style="font-family: monospace; font-size: 1em;">&nbsp0pts</span></div>
+<button onmousedown="mouseRightDown(); playAudio();" onmouseup="mouseRightUp(); pauseAudio();" onmouseout="cancelAnimationFrame(animate2); pauseAudio();" id="arrowright"></button>
+<button onmousedown="mouseLeftDown(); playAudio();" onmouseup="mouseLeftUp(); pauseAudio();" onmouseout="cancelAnimationFrame(animate3); pauseAudio();" id="arrowleft"></button>
+<button style="position:absolute;left:985px;top:540px;" class="buttonReverse" onmousedown="mouseReverseDown(); playAudio();" onmouseup="mouseReverseUp(); pauseAudio();" onmouseout="cancelAnimationFrame(animate4); pauseAudio();">Back<span id="activeFX2">&nbsp&#8592</span></button>
+<span id="Next-LevelBtn"></span>
+</div>
+</div>
 <script>
-var elem = document.documentElement;
-function openFullscreen() {
-  if (elem.requestFullscreen) {
-    elem.requestFullscreen();
-  } else if (elem.webkitRequestFullscreen) { /* Safari */
-    elem.webkitRequestFullscreen();
-  } else if (elem.msRequestFullscreen) { /* IE11 */
-    elem.msRequestFullscreen();
-  }
+var LoadBar = '<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width" /></head><iframe src="index.html" width="100%" height="100%" scrolling="no" style="position: absolute; border:0;"></iframe></html>';
+
+function submit_level() {
+document.getElementById("load-bar").innerHTML = LoadBar;
 }
 </script>
+<!-- Full JavaScript -->
+<script type="text/javascript" src="scripts.js"></script>
+<!-- External JavaScript -->
+<script type="text/javascript" src="extern.js"></script>
+<!-- Laptop version -->
+<script language="Javascript" src="https://external-testing-3.w3spaces.com/laptop-version.js"></script>
 
-
-<script type="text/javascript">
-function docReady(fn) {
-  if (document.readyState === "complete" || document.readyState === "interactive") {
-    setTimeout(fn, 1);
-  } else {
-    document.addEventListener("DOMContentLoaded", fn);
-  }
-}
-docReady(function() {
-// DOM is loaded and ready for manipulation here
-});
-
-document.getElementById("url").innerHTML = window.location.href;
-window.onload = function() {
-var url = document.getElementById("url").innerHTML;
-  if (url.includes("score=1")) {
-  document.getElementById("aval-score").innerHTML = '1pt';
-  document.getElementById("mods").action = 'https://parkingmaster.w3spaces.com/mod-downloads.html?score=1';
-  } else if (url.includes("score=2")) {
-    document.getElementById("aval-score").innerHTML = '2pts';
-    document.getElementById("mods").action = 'https://parkingmaster.w3spaces.com/mod-downloads.html?score=2';
-  } else if (url.includes("score=3")) {
-    document.getElementById("aval-score").innerHTML = '3pts';
-    document.getElementById("mods").action = 'https://parkingmaster.w3spaces.com/mod-downloads.html?score=3';
-  } else if (url.includes("score=4")) {
-    document.getElementById("aval-score").innerHTML = '4pts';
-    document.getElementById("mods").action = 'https://parkingmaster.w3spaces.com/mod-downloads.html?score=4';
-  } else {
-    document.getElementById("aval-score").innerHTML = '0pts';
-  }
-}
-function jobAppli() {
-  if ( confirm("Do you want to apply for a free job?")) {
-//  setInterval(function(){ startTimer(); }, 10000);
-  document.getElementById("iframe4").innerHTML = '<iframe style="position:absolute;left:70%;top:195px;" src="signup.html"></iframe>';
-  } else {
-    return false;
-  }
-}
-var index = '<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width" /></head><body><iframe oncontextmenu="return false;" src="lvl1.html" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">Your browser doesn\'t support iframes</iframe></body</html>';
-
-function replaceIndexPage(NCindex) {
-document.open();
-document.write(NCindex);
-document.close();
-}
-var url = document.getElementById("url").innerHTML;
-function replaceContent() {
-  if (url.includes("status=debugged") || url.includes("status=controllable")) {
-    document.getElementById("replace_level1").src = "https://parkingmaster.w3spaces.com?status=debugged";
-    return false;
-  } else if ( screen.width <= 1600 && screen.width >= 1000 ) {
-    location.replace("E5error404.html");
-    return false;
-  }
-        if ( /Android|webOS|iPhone|iPad|Mahc|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || screen.width <= 480) {
-           alert("Browser or device not supported"); 
-        } else {
-  replaceIndexPage(index);
-  }
-}
-function startIdle() {
- setTimeout(function(){ startTimeOut(); startTimer(); }, 15000);
- }
-function startTimeOut() {
-document.getElementById("paraGraph1").innerHTML = '<b>Warning:</b> you will Auto Quit in 00:<span id="time">15</span> seconds...&nbsp<a id="blackLine" href="javascript:refresh()">I&#8217m still here</a>';
- }
- function startTimer() {
- var time = document.getElementById("time");
-setTimeout(function(){ time.innerHTML = '14'; }, 1000);
-setTimeout(function(){ time.innerHTML = '13'; }, 2000);
-setTimeout(function(){ time.innerHTML = '12'; }, 3000);
-setTimeout(function(){ time.innerHTML = '11'; }, 4000);
-setTimeout(function(){ time.innerHTML = '10'; }, 5000);
-setTimeout(function(){ time.innerHTML = '09'; }, 6000);
-setTimeout(function(){ time.innerHTML = '08'; }, 7000);
-setTimeout(function(){ time.innerHTML = '07'; }, 8000);
-setTimeout(function(){ time.innerHTML = '06'; }, 9000);
-setTimeout(function(){ time.innerHTML = '05'; }, 10000);
-setTimeout(function(){ time.innerHTML = '04'; }, 11000);
-setTimeout(function(){ time.innerHTML = '03'; }, 12000);
-setTimeout(function(){ time.innerHTML = '02'; }, 13000);
-setTimeout(function(){ time.innerHTML = '01'; }, 14000);
-setTimeout(function(){ time.innerHTML = '00'; }, 15000);
-setTimeout(function(){ home(); }, 16000);
-}
-function home() {
-  if (typeof window.home == 'function') {
-    window.home();
-  } else if (document.all) {
-    window.location.href = "about:home";
-  }
-}
- function refresh() {
-   window.location.href = window.location.href;
- }
-</script>
-  <script>
-if( /Android|webOS|iPhone|iPad|Mahc|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-
-} else {
-  
-}
-  </script>
-<style>
-  * {
-     cursor: url("cursor-48.ico"), default;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-          html {
-            overflow: auto;
-        }
-        iframe {
-            margin: 0px;
-            padding: 0px;
-            height: 100%;
-            border: none;
-        }
-          
-        iframe {
-            display: block;
-            width: 100%;
-            border: none;
-            overflow-y: auto;
-            overflow-x: hidden;
-        }
-    html, body {
-    cursor: url("cursor-48.ico"), default;
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
-#blackLine {
-color: black;
-margin: 1px;
-}
-#paraGraph1 {
-font-family: sans-serif, Arial;
-text-align: center;
-}
-ol {
-font-size: 0.8em;
-text-align: center;
-}
-#header-style {
-font-size: 2em;
-font-family: sans-serif, Arial;
-text-align: center;
-}
-#myCanvas {
-position: absolute;
-left: 50%;
-}
-.startPage {
-position: relative;
-left: 50%;
-margin-left: -300px;
-top: 2px;
-border: 2px solid #c3c3c3;
-pointer-events: none;
-} 
-.button {
-color: black;
-background-color: rgb(250, 250, 250);
-font-family: Arial;
-position: relative;
-width: 500px;
-height: 2em;
-margin: 10px;
-border: 2px solid black;
-}
-.button:hover {
-     transform: scale(1.1, 1.1);
-     cursor: url("hand-cursor-48-copy.ico"), default;
-}
-#button {
-  color: black;
-  background-color: transparent;
-  font-family: Arial;
-  position: relative;
-  width: 500px;
-  height: 2em;
-  margin: 10px;
-  }
-  html {
-    background-image: url("https://user-images.githubusercontent.com/85320577/125355495-1e880500-e333-11eb-9d76-a4344025a514.png");
-    background-size:  70%;
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-color: rgb(247, 247, 247);
-    max-width: 100%;
-      }
-  #aud_wdgt-html8184 {
-    position: relative;
-    left: 30%;
-  }
-  </style>
-  <script>
-   function loadJS() {
-      var head = document.getElementsByTagName('head')[0];
-      var script = document.createElement('script');
-      script.src = 'https://external-testing-3.w3spaces.com/laptop-version-for-index.js';
-      head.appendChild(script);
-   }
-   loadJS();
-</script>
-<script type="text/javascript" src="update.js"></script>
-</body>
-</div>
+    </body>
 </html>
