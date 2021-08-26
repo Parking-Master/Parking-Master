@@ -1,5 +1,7 @@
 <script>
-  var alertcontent = document.createElement('div');
-  alertcontent.innerHTML = '<b>Alert</b>';
-  alert(alertcontent);
+function custAlert(msg) {
+  if ($.browser.mozilla) {
+    alert("mozilla");
+  }
+}
 </script>
