@@ -26,6 +26,7 @@ var isBlink = (isChrome || isOpera) && !!window.CSS;
   if (isFirefox) {
     var moz_alert = document.createElement('div');
     moz_alert.innerHTML = '<div style="width: 200px; height: 80px; background-color: #2d2d2b;"></div>';
+    document.body.appendChild(moz_alert);
   }
 }
   custAlert();
