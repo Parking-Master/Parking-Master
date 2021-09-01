@@ -1,6 +1,5 @@
 <img src="image.png" /><hr>
-- for further releases, click [<ins>here.</ins>](#further-releases-1)
-- to contact us about bugs or suggestions, email [<ins>parkingmaster@email.com.</ins>](mailto:parkingmaster@email.com)<hr>
+<a href="<img src="table.png.png" />
 ### Parking Master multiplayer (by browser!)
 How to play multiplayer by browser?<br>
 well, to begin with, this game is<br>
