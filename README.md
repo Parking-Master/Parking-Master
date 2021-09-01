@@ -1,5 +1,5 @@
-<img src="image.png" /><hr>
-<a href="#further-releases-1"><img src="li-table_1.png" /></a>
+<img src="header1.png" /><hr>
+[<img src="li-table_1.png" />](#further-releases-1)
 ### Parking Master multiplayer (by browser!)
 How to play multiplayer by browser?<br>
 well, to begin with, this game is<br>
