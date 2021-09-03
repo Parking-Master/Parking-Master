@@ -2,7 +2,7 @@
 > Parking Master is a fun web-game, and desktop application.<br>
 > You can play it by installing the desktop app or going to<br>
 > https://parkingmaster.w3spaces.com/
-##### - For further releases, please skip to the <a href="#further-releases-1">Further Releases</a> section.
+##### - For further releases, please skip to the <a href="#further-releases">Further Releases</a> section.
 ##### - To contact us for bugs, email us at <a href="mailto:parkingmaster@email.com">parkingmaster@email.com</a>.
 ## Parking Master desktop app released!
 An all-new parking master desktop application.<br>
