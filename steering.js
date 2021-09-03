@@ -1,6 +1,6 @@
 var steerFrame = document.createElement('iframe');
 steerFrame.style = 'border: 0; margin: 0; width: 6.510416666666667vw; height:  6.510416666666667vw;';
-steerFrame.src = 'new-file-7.html#steering';
+steerFrame.src = 'steering.html#steering';
 steerFrame.className = 'steering-wheel';
 steerFrame.scrolling = 'no';
 document.body.appendChild(steerFrame);
