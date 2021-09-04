@@ -1,4 +1,4 @@
-(function(){
+/*(function(){
 time_remain_check__ = setInterval(function(){
 if (localStorage['time_remain']) {
 setInterval(function(){
@@ -23,7 +23,7 @@ function deleteLocalLobbies() {
     $.get("index.html", function(data, status){ 
     	$("body").html(data); 
     }); 
-}
+}*/
 document.querySelector('button').addEventListener('click', function(){
 document.getElementById('click-sound-mp3').currentTime = 0;
 document.getElementById('click-sound-mp3').play();
