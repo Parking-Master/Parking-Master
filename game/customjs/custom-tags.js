@@ -10,9 +10,9 @@ document.getElementsByTagName('url')[0].addEventListener('click', function(){
   var url_loc = document.getElementsByTagName('url')[0].getAttribute('to');
   window.location.href = url_loc;
 });
-document.getElementsByTagName('url')[1].innerText = document.getElementsByTagName('url')[1].getAttribute('text');
-document.getElementsByTagName('url')[1].addEventListener('click', function(){
-  var url_loc2 = document.getElementsByTagName('url')[1].getAttribute('to');
+document.getElementById('t2').innerText = document.getElementById('t2').getAttribute('text');
+document.getElementById('t2').addEventListener('click', function(){
+  var url_loc2 = document.getElementById('t2').getAttribute('to');
   window.location.href = url_loc2;
 });
 if (document.getElementsByTagName('url')[0].innerText === document.getElementsByTagName('url')[0].getAttribute('text') && document.getElementsByTagName('url')[1].innerText === document.getElementsByTagName('url')[1].getAttribute('text')) {
