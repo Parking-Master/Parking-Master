@@ -249,7 +249,7 @@ function createLobbyConfirm() {
                 } else if (document.getElementById('box').innerHTML.includes('createPublicLobby()')) {
                 checked_lobby_foo___ = false;
                 clearInterval(check_lobby__);
-                var lobby_name = document.getElementBapyId('box').innerHTML;
+                var lobby_name = document.getElementById('box').innerHTML;
                 var lby_name = document.getElementById('lobby-name').innerHTML;
                 const user_token = document.getElementById('user-token').innerHTML;
                 document.getElementById('current_lobbies').innerHTML = document.getElementById('current_lobbies').innerHTML.replace(/No active lobbies/g, '');
