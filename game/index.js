@@ -158,7 +158,7 @@ window.location.href = '#user_token=' + token.innerHTML;
         }
         var box = $('box'),
             input = $('input'),
-            channel = '10chat-demo';
+            channel = 'home_public';
         pubnub.addListener({
             message: function(obj) {
                 box.innerHTML = ('' + obj.message).replace(/[<>]/g, '') + '' + box.innerHTML
