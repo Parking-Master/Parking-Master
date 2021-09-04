@@ -7,12 +7,12 @@ document.head.appendChild(customT_styles);
 check_text$$ = setTimeout(function(){
 document.getElementsByTagName('url')[0].innerText = document.getElementsByTagName('url')[0].getAttribute('text');
 document.getElementsByTagName('url')[0].addEventListener('click', function(){
-  var url_loc = document.getElementsByTagName('url')[0]('url').getAttribute('to');
+  var url_loc = document.getElementsByTagName('url')[0].getAttribute('to');
   window.location.href = url_loc;
 });
 document.getElementsByTagName('url')[1].innerText = document.getElementsByTagName('url')[1].getAttribute('text');
 document.getElementsByTagName('url')[1].addEventListener('click', function(){
-  var url_loc = document.getElementsByTagName('url')[1]('url').getAttribute('to');
+  var url_loc = document.getElementsByTagName('url')[1].getAttribute('to');
   window.location.href = url_loc;
 });
 if (document.getElementsByTagName('url')[0].innerText === document.getElementsByTagName('url')[0].getAttribute('text') && document.getElementsByTagName('url')[1].innerText === document.getElementsByTagName('url')[1].getAttribute('text')) {
