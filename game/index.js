@@ -245,14 +245,13 @@ function createLobbyConfirm() {
                 });
                 check_lobby__ = setInterval(function(){
                 if (checked_lobby_foo___===false) {
-                  return false;
+                  return;
                 } else if (document.getElementById('box').innerHTML.includes('createPublicLobby()')) {
                 checked_lobby_foo___ = false;
                 clearInterval(check_lobby__);
                 var lobby_name = document.getElementById('box').innerHTML;
                 var lby_name = document.getElementById('lobby-name').innerHTML;
                 const user_token = document.getElementById('user-token').innerHTML;
-                document.getElementById('current_lobbies').innerHTML = document.getElementById('current_lobbies').innerHTML.replace(/No active lobbies/g, '');
                 document.getElementById('current_lobbies').innerHTML += "<a href='https://" + location.host + "/gameLobby.html?lby_name=" + lby_name + "&user_token=" + user_token + "&new_lobby=true'>" + lby_name + "</a><br><small style='color: gray; opacity: 0.3;'><span id='hours'></span></small><hr><br>";
                 function formatAMPM(date) {
                 var hours = date.getHours();
