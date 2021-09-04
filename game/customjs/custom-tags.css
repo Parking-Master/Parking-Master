@@ -1,0 +1,7 @@
+          url {
+            cursor: pointer;
+            color: #444;
+          }
+          url:hover {
+            text-decoration: underline;
+          }
