@@ -5,13 +5,11 @@ customT_styles.type = 'text/css';
 customT_styles.href = 'https://cdn.jsdelivr.net/gh/Parking-Master/Parking-Master/game/customjs/custom-tags.css';
 document.head.appendChild(customT_styles);
 check_text$$ = setTimeout(function(){
-document.documentElement.innerHTML = document.documentElement.innerHTML.replace('<url' + document.getElementsByTagName('url')[0].attributes + '>', '<url' + document.getElementsByTagName('url')[0].attributes + '></url;');
 document.getElementsByTagName('url')[0].innerText = document.getElementsByTagName('url')[0].getAttribute('text');
 document.getElementsByTagName('url')[0].addEventListener('click', function(){
   var url_loc = document.getElementsByTagName('url')[0]('url').getAttribute('to');
   window.location.href = url_loc;
 });
-document.documentElement.innerHTML = document.documentElement.innerHTML.replace('<url' + document.getElementsByTagName('url')[1].attributes + '>', '<url' + document.getElementsByTagName('url')[1].attributes + '></url;');
 document.getElementsByTagName('url')[1].innerText = document.getElementsByTagName('url')[1].getAttribute('text');
 document.getElementsByTagName('url')[1].addEventListener('click', function(){
   var url_loc = document.getElementsByTagName('url')[1]('url').getAttribute('to');
