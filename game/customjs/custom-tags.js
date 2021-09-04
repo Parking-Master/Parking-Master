@@ -14,14 +14,3 @@ if (document.getElementsByTagName('url')[0].innerText === document.getElementsBy
   window.clearInterval(check_text$$);
 }
 }, 1);
-document.createElement('url2');
-check_text2$$ = setTimeout(function(){
-document.getElementsByTagName('url2')[0].innerText = document.getElementsByTagName('url2')[0].getAttribute('text');
-document.getElementsByTagName('url2')[0].addEventListener('click', function(){
-  var url_loc = document.getElementsByTagName('url2')[0].getAttribute('to');
-  window.location.href = url_loc;
-});
-if (document.getElementsByTagName('url2')[0].innerText === document.getElementsByTagName('url2')[0].getAttribute('text')) {
-  window.clearInterval(check_text2$$);
-}
-}, 1);
