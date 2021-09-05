@@ -1,19 +1,5 @@
 (function(){
-if (window.location.href.includes('1')) {
-  window.parent.document.title = "Parking Master LVL. 1";
-} else if (window.location.href.includes('2')) {
   window.parent.document.title = "Parking Master LVL. 2";
-} else if (window.location.href.includes('3')) {
-  window.parent.document.title = "Parking Master LVL. 3";
-} else if (window.location.href.includes('4')) {
-  window.parent.document.title = "Parking Master LVL. 4";
-} else if (window.location.href.includes('5')) {
-  window.parent.document.title = "Parking Master LVL. 5";
-} else if (window.location.href.includes('6')) {
-  window.parent.document.title = "Parking Master LVL. 6";
-} else if (window.location.href.includes('7')) {
-  window.parent.document.title = "Parking Master LVL. 7";
-}
 })();
 /*
 function getCanvasUrl() {
