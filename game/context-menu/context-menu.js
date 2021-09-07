@@ -13,13 +13,13 @@ newMenu.className = 'menu';
 document.body.appendChild(newMenu);
 var newMenuOptions = document.createElement('ul');
 newMenuOptions.className = 'menu-options';
-document.getElementsByClassName('menu')[0].appendChild(newMenuOptions);\
-var newli1 = document.createElement('li')
-var newli2 = document.createElement('li')
-var newli3 = document.createElement('li')
-var newli4 = document.createElement('li')
-var newli5 = document.createElement('li')
-var newli6 = document.createElement('li')
+document.getElementsByClassName('menu')[0].appendChild(newMenuOptions);
+var newli1 = document.createElement('li');
+var newli2 = document.createElement('li');
+var newli3 = document.createElement('li');
+var newli4 = document.createElement('li');
+var newli5 = document.createElement('li');
+var newli6 = document.createElement('li');
 document.getElementsByClassName('menu').getElementsByClassName('menu-options').appendChild(newli1);
 document.getElementsByClassName('menu').getElementsByClassName('menu-options').appendChild(newli2);
 document.getElementsByClassName('menu').getElementsByClassName('menu-options').appendChild(newli3);
