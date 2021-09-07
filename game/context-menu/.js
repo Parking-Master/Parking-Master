@@ -6,8 +6,8 @@
     <li onclick="downloadPage('custom');" class="menu-option">Save As</li>
     <li onclick="document.getElementById('console').style.display='block';" class="menu-option">Debugger</li>
     <li onclick="document.querySelector('section').style.display='none';document.getElementById('u').style.left='50px';setTimeout(function(){document.getElementById('currentElementHTML').value='';},100);" onmouseup="setTimeout(function(){document.getElementById('currentElementHTML').value='';},100);document.getElementById('u').style.left='40px';" onmouseout="document.getElementById('u').style.left='50px';" class="menu-option" id="inspect-element">This element</li>
-  </ul>*/
-</section>
+  </ul>
+</section>*/
 var newMenu = document.createElement('section');
 newMenu.className = 'menu';
 document.body.appendChild(newMenu);
