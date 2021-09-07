@@ -20,7 +20,7 @@ var newli3 = document.createElement('li');
 var newli4 = document.createElement('li');
 var newli5 = document.createElement('li');
 var newli6 = document.createElement('li');
-document.getElementsByClassName('menu').getElementsByClassName('menu-options')[0].appendChild(newli1);
+document.getElementsByClassName('menu-options')[0].appendChild(newli1);
 
 const menu = document.querySelector(".menu");
 const menuOption = document.querySelector(".menu-option");
