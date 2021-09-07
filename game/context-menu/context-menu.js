@@ -20,12 +20,7 @@ var newli3 = document.createElement('li');
 var newli4 = document.createElement('li');
 var newli5 = document.createElement('li');
 var newli6 = document.createElement('li');
-document.getElementsByClassName('menu').getElementsByClassName('menu-options').appendChild(newli1);
-document.getElementsByClassName('menu').getElementsByClassName('menu-options').appendChild(newli2);
-document.getElementsByClassName('menu').getElementsByClassName('menu-options').appendChild(newli3);
-document.getElementsByClassName('menu').getElementsByClassName('menu-options').appendChild(newli4);
-document.getElementsByClassName('menu').getElementsByClassName('menu-options').appendChild(newli5);
-document.getElementsByClassName('menu').getElementsByClassName('menu-options').appendChild(newli6);
+document.getElementsByClassName('menu').getElementsByClassName('menu-options')[0].appendChild(newli1);
 
 const menu = document.querySelector(".menu");
 const menuOption = document.querySelector(".menu-option");
