@@ -17,7 +17,7 @@ document.querySelector(".buttonDrive").addEventListener("mousedown", mouseDown),
 var canvas, animate, animate2, animate3, animate4, alerted = !1;
 
 function parkingLot(t) {
-    ctx.fillRect(590, 0, 10, canvas.height), ctx.fillRect(450, 0, 140, 10), ctx.fillRect(450, 90, 140, 10), ctx.fillRect(450, 180, 140, 10), ctx.fillStyle = "#00FF00", ctx.fillRect(450, 270, 20, 10), ctx.fillRect(480, 270, 20, 10), ctx.fillRect(510, 270, 20, 10), ctx.fillRect(540, 270, 20, 10), ctx.fillRect(570, 270, 20, 10), ctx.fillStyle = "#00FF00", ctx.fillRect(450, 360, 20, 10), ctx.fillRect(480, 360, 20, 10), ctx.fillRect(510, 360, 20, 10), ctx.fillRect(540, 360, 20, 10), ctx.fillRect(570, 360, 20, 10)
+    ctx.fillRect(590, 0, 10, canvas.height), ctx.fillRect(450, 0, 140, 10), ctx.fillRect(450, 90, 140, 10), ctx.fillRect(450, 180, 140, 10), ctx.fillStyle = "#333", ctx.fillRect(450, 270, 20, 10), ctx.fillRect(480, 270, 20, 10), ctx.fillRect(510, 270, 20, 10), ctx.fillRect(540, 270, 20, 10), ctx.fillRect(570, 270, 20, 10), ctx.fillStyle = "#333", ctx.fillRect(450, 360, 20, 10), ctx.fillRect(480, 360, 20, 10), ctx.fillRect(510, 360, 20, 10), ctx.fillRect(540, 360, 20, 10), ctx.fillRect(570, 360, 20, 10)
 }
 
 function parkDetector() {
