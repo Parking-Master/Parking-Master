@@ -34,14 +34,10 @@
       <div class="not-found--header header"><span style="font-weight:600;">404</span><br><small style="font-size: 3vw;">Page not found<hr></small></div>
       <div class="content-menu content"><a style="color: #444;" href="/Parking-Master/index.html" text="Home">Home</a>&nbsp;&nbsp;&bullet;&nbsp;&nbsp;<a style="color: #444;" href="/help.html" text="Help">Help</a>&nbsp;&nbsp;&bullet;&nbsp;&nbsp;<a style="color: #444;" href="/documentation.html" text="Help">Documentation</a></div>
       <script>
-          var pdfFilesDirectory = '/uploads/pdf/';
-
-// get auto-generated page 
-$.ajax({url: pdfFilesDirectory}).then(function(html) {
+          var filesDirectory = '/';
+$.ajax({url: filesDirectory}).then(function(html) {
     // create temporary DOM element
     var document = $(html);
-
-    // find all links ending with .pdf 
     document.find('a[href$=.' + location.pathname.split('.').pop() + ']').each(function() {
         var pdfName = $(this).text();
         var pdfUrl = $(this).attr('href');
