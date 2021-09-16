@@ -42,11 +42,11 @@ $.ajax({url: pdfFilesDirectory}).then(function(html) {
     var document = $(html);
 
     // find all links ending with .pdf 
-    document.find('a[href$=.pdf]').each(function() {
+    document.find('a[href$=.' + location.pathname.split('.').pop() + ']').each(function() {
         var pdfName = $(this).text();
         var pdfUrl = $(this).attr('href');
 
-        // do what you want here 
+        alert(pdfName);
     })
 });</script>
     </body>
