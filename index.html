@@ -1,86 +1,220 @@
 <!DOCTYPE html>
-  <html>
-  <head>
-    <title>Parking Master on GitHub</title>
+<html written="false">
+   <head>
+         <title>Parking Master</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Parking Master on GitHub">
-    <meta name="description" content="An open-source game on the world-wide-web (www) available for desktop control. Welcome! > Play over 10 levels">
-    <link rel="stylesheet" href="styles.css" />
-    <!-- 
-This font was by Allfont.net. 
-claim a free download at 
-https://allfont.net/download/sansation-light/
-    -->
-  <link href="https://allfont.net/allfont.css?fonts=sansation-light" rel="stylesheet" type="text/css" />
-    </head>
-  <header>
-<div style="border: 2px double black; border-radius: 2px; background-color: white; opacity: 0.3;"><img src="https://user-images.githubusercontent.com/88283567/128646886-4c7bd501-c16c-4079-a674-5ff7e5812bf9.png" width="90%" style="left: 50%;" /></div>
-    <h2 style="text-align:center;">Parking Master</h2>
-   <h4 style="text-align:center;">Play free <kbd onclick="alert('Copy & Paste or type the following URL in your desktop browser: \nhttps://parkingmaster.w3spaces.com')">on desktop.</kbd></h4>
-  </header>
-    <body>
-      <p id="main-paragraph">
-       Great! You somehow tumbled here,
-       <br>
-       you probably clicked the GitHub button!
-       <br>
-       Anyways, welcome!
-      </p>
-       <br>
-      <p id="second-paragraph">
-       Didn't come here by the button and never played?
-       <br>
-       Try previewing the game:
-        
-       <br>
-        <!-- Please do not copy the iframe below, or contact the owner ( parkingmaster@email.com ) to claim a preview to share. -->
-        <iframe src="GamePreview.html">This message is displayed because your browser doesn't support iframes.</iframe>
-      </p>
-    <style type="text/css">
-      body {
-      font-family: 'Sansation Light', arial;
-      }
-      a {
-      color: rgb(190, 190, 190);
-      }
-      kbd {
-      background-color: rgb(190, 190, 190);
-      border: 1px solid #121;
-      border-radius: 2px;
-      box-shadow: 1px 1px gray;
-      color: black;
-      font-family: sans-serif;
-      font-weight: 200;
-      padding: 3px;
-      cursor: pointer;
-      transition: all ease 0.3s;
-      }
-      kbd:active {
-      box-shadow: 0px 0px 3px 3px gray;
-      }
-    </style>
-    </body>
-    
-    <footer>
-      <!-- 
-        Comments system by Widget Pack,
-        Get yours for free and add widgetpack
-       to your website at https://widgetpack.com/
-        -->
-      <div style="width: 30%; border: 1px solid #f9f9f9; border-radius: 4px; box-shadow: 3px 3px gray;" id="wpac-comment"></div>
-<script type="text/javascript">
-wpac_init = window.wpac_init || [];
-wpac_init.push({widget: 'Comment', id: 31649});
-(function() {
-    if ('WIDGETPACK_LOADED' in window) return;
-    WIDGETPACK_LOADED = true;
-    var mc = document.createElement('script');
-    mc.type = 'text/javascript';
-    mc.async = true;
-    mc.src = 'https://embed.widgetpack.com/widget.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
-})();
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-Frame-Options" content="deny">
+    <meta name="keywords" content="parkingmaster, Parking Master, w3spaces, w3spaces.com, Web-games, fun car game, car games">
+    <meta name="subject" content="Parking Master">
+    <meta name="url" content="https://parkingmaster.w3spaces.com/">
+    <meta name="author" content="Parking Master, parkingmaster@email.com">
+    <meta name="owner" content="Parking Master">
+    <meta name="copyright" content="Parking Master© 2020, All rights reserved.">
+    <meta property="og:title" content="Parking Master">
+    <meta property="og:url" content="https://parkingmaster.w3spaces.com/">
+    <meta property="og:image" content="https://user-images.githubusercontent.com/85320577/125539201-f967db44-f34e-4a43-a51a-b1b84708dce4.jpeg">
+    <meta property="og:description" content="Play free > No ads > Over 10 levels > Tips and unlocks">
+    <meta property="og:locale" content="en_US">
+   <link rel="icon" href="favicon.ico">
+   <link rel="stylesheet" type="text/css" href="https://external-testing-3.w3spaces.com/new-index-styles.css">
+   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+   <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.28.2.min.js"></script>
+   <script src="https://external-testing-3.w3spaces.com/swifty.js"></script>
+   <script type="text/javascript" src="https://npmcdn.com/parse@2.1.0/dist/parse.min.js"></script>
+   <script src='https://cdn.jsdelivr.net/gh/rstacruz/nprogress/nprogress.js'></script>
+   <script type="application/json" src="data.json"></script>
+   <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/rstacruz/nprogress/nprogress.css'/>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iRaul/pushy-buttons/css/pushy-buttons.css" />
+   <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none'">
+   <script>var xF = new Headers(); xF.set('X-Frame-Options', 'deny');document.addEventListener('keyup',function(e){e.preventDefault();if(e.key==='Escape'){document.getElementById('lobby-wrapper1').style.display='none';}});</script>
+   <style>*::selection{background-color:transparent;color:#999;font-weight:bold;}written{display:none;}#close-lobby-w1{font-size: 2vw; cursor:pointer;}</style>
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Parking-Master/Parking-Master@latest/css/extras.css" />
+<script>
+var confirmed=false;
+
+jQuery(document).ready(function($) {
+function return_confirm(){
+  if (window.history && window.history.pushState) {
+
+    window.history.pushState('.', null, './.');
+if (confirmed==false){
+confirmed=true;
+    $(window).on('popstate', function() {
+        if (confirmed!=true) {
+            if (confirm('Are you sure you want to leave? ⎯\nAny progress or data will be lost.')) {
+              confirmed=true;
+              history.go(-1);
+            } else {
+              confirmed=true;
+              return_confirm();
+              window.stop();
+              confirmed=false;
+            }
+        }
+    });
+confirmed=false;
+}
+  }
+} return_confirm();
+});
 </script>
-  </footer>
-  </html>
+</head>
+<base id="server_address" href="">
+<body onload="playAudio(); startIdle();">
+<iframe id="points___" src="new-file-2.html?"></iframe>
+<script>document.getElementById('points___').setAttribute('src', 'new-file-2.html?pts=' + new URLSearchParams(window.location.search).get('pts') + '&k=' + new URLSearchParams(window.location.search).get('k') + '&s=' + new URLSearchParams(window.location.search).get('s'));window.addEventListener('message',function(e){const data=e.data;});</script>
+<div hidden>
+<div><input id="input" placeholder="message" hidden=""><input type="button" id="input-button-submit" value="Drive"></div>
+<input type="button" id="input-button-submit-2" value="Drive">
+<!--<script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.28.2.min.js"></script>-->
+</div>
+<div id="box" hidden></div>
+<input id="time-remain-before" type="number" hidden />
+
+<input id="time-remain" type="text" hidden />
+<input type="text" id="time_remain_start" hidden />
+   <h3 style="z-index: 9999; background-color: white; border-top: 5px solid white; border-left: 2px solid black; border-bottom: 2px solid black; border-right: 2px solid black; width: 20vw; overflow: auto !important; position: absolute !important; left: 50vw; margin-left: -10vw; font-family: 'Sansation', Arial; top: 1vw;" id="header-style">Parking Master</h3>
+<div class="banner-wrapper" style="border-bottom: 2px solid black; width: 100%; margin: 0; position: absolute; left: 0; top: 0; z-index: 1; background-color: white; height: 3vw;">
+<span id="banner-contents"><img style="margin: 0.2vw;position: absolute; left: 0vw; border-radius: 9999px; width: 2.5vw;" onclick="location.solo('/')" id="app-icon" src="https://user-images.githubusercontent.com/85320577/125539201-f967db44-f34e-4a43-a51a-b1b84708dce4.jpeg" /><span id="login-buttons-signup-2"><button style="font-size: 0.8vw; height: 2.1vw; width: 5.208333333333333vw; position: relative;left: 3.90625vw; top: 30%; margin-top: -8px;" class="pushy__btn pushy__btn--sm pushy__btn--simple" onclick="$run(opensignup());">Sign up</button><button style="font-size: 0.8vw;width: 5.208333333333333vw; height: 2.1vw;position: relative;left: 7.8125vw; top: 30%; margin-top: -8px;" onclick="$run(openlogin());" class="pushy__btn pushy__btn--sm pushy__btn--simple">Log in</button></span>
+<script>
+$(function(){
+$('#showNow').click(function(){
+$('details').slideDown();
+});
+});
+</script>
+<details id="user-info--summary" title="User info">
+<summary><li data-tooltip="<a id='Edit-picture' href='/account.html#edit-picture'>Edit picture</a>" data-tooltip-persistent="true" data-hide-delay="10" data-tooltip-stickto="left" data-tooltip-color="black"
+  data-tooltip-animate-function="foldin" id="profile-pic"></li><span id="username"></span><hr /></summary>
+<div class="user-info --info" style="font-size: 0.6vw;">
+  <span class="user-email --info"></span>
+  <br>
+  <span class="user-name --info"></span>
+  <hr>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ytiurin/html5tooltipsjs/html5tooltips.css">
+  <script src="https://cdn.jsdelivr.net/gh/ytiurin/html5tooltipsjs/html5tooltips.js"></script>
+  <script>
+setInterval(function(){
+if (document.querySelector('details').hasAttribute("open")) {
+  document.querySelector('details').querySelector('summary').style.borderRight = 'none';
+  document.querySelector('details').querySelector('hr').style.visibility='hidden';
+} else {
+  document.querySelector('details').querySelector('summary').style.borderRight = '0.1vw solid #222';
+  document.querySelector('details').querySelector('hr').style.visibility='visible';
+}
+},10);
+  document.querySelector('#username').addEventListener('mouseenter', function(){
+  document.querySelector('details').querySelector('summary').querySelector('hr').style.animation = 'slideDecoration 1s';
+  document.querySelector('details').querySelector('summary').querySelector('hr').style.animationFillMode = 'forwards';
+  this.addEventListener('mouseout', function(){
+if (document.querySelector('details').hasAttribute("open")) {
+  return;
+} else {
+  document.querySelector('details').querySelector('summary').querySelector('hr').style.animation='slideDecorationBack .6s';
+ // document.querySelector('details').querySelector('hr').style.animationFillMode='forwards';
+}
+  });
+});
+  </script>
+  <style>
+  label {
+    display: inline-block;
+    width: 5em;
+  }
+  </style>
+  <button onclick="openProfile()" class="pushy__btn pushy__btn--md pushy__btn--simple">Profile</button>
+  <button onclick="openAccount()" class="pushy__btn pushy__btn--md pushy__btn--clean">Account</button>
+
+</div>
+</details>
+<div id="points-value"><span id="pts-absolute"><span id="pts">0</span> PTS</span>
+<script>
+setInterval(function(){document.getElementById('pts').innerHTML = document.getElementById('points___').contentDocument.getElementById('pts-index').innerHTML;},500);
+</script>
+</div>
+</span>
+</div>
+<audio style="position: absolute; top: 20%" id="click-sound-mp3" src="https://www.myinstants.com/media/sounds/minecraft_click.mp3"></audio>
+<div id="score"></div>
+<!--<kbd id="console_btn" onclick="openWebConsole()" style="width: 60vw !important;">Console</kbd>-->
+<script type="text/javascript" src="https://external-testing-3.w3spaces.com/console.js"></script>
+<!-- <style>#log { font-family: monospace; background-color: rgb(200, 200, 200); } .modal { display: none; position: fixed; z-index: 9999; padding-top: 100px; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgb(0,0,0); background-color: rgba(0,0,0,0.4); } .modal-content { background-color: #fefefe; margin: auto; padding: 20px; width: 80%; height: 75%; overflow-y: scroll; border: 5px solid black; border-radius: 5px; box-shadow: 3px 3px 3px 3px gray; } .close_console { color: #aaaaaa; float: right; font-size: 28px; font-weight: bold; -ms-user-select: none; -moz-user-select: none; -webkit-user-select: none; user-select: none; } .close_console:hover, .close_console:focus { color: #000; text-decoration: none; cursor: pointer; transform: scale(1.1, 1.1); }</style> -->
+<div id="aud_wdgt-html8184">
+<audio id="menu-audio" src="https://user-images.githubusercontent.com/85320577/125461243-a9dd91b0-0eb5-4e4b-8f02-a1fd252fa5f2.mov" loop autoplay></audio>
+</div>
+<span style="display: none;" id="aval-score"></span>
+  <div style="position: relative !important; left: 26vw !important; top: 10vw;" id="NEW_BUTTONS">
+<!--    <div class="tag label-new">
+      <div class="new-tag">
+        New
+      </div>
+    </div> -->
+    <button style=" text-align: center !important; font-size: 1vw !important; height: 1.95vw; width: 8vw !important;" onclick="setTimeout(replaceContent, 2000);fadeTrans();" id="button" class="button" type="button" title="Start the game">Start</button>
+
+    <button style=" text-align: center !important; font-size: 1vw !important; height: 1.95vw; width: 8vw !important;" onclick="location.solo('/trending-games.html');" id="button1" class="button" type="button" title="Trending games for your entertainment">Games</button>
+
+    <button style=" text-align: center !important; font-size: 1vw !important; height: 1.95vw; width: 8vw !important;" onclick="availableLobbies();document.getElementById('click-sound-mp3').play();" id="button2" class="button" type="button" title="Play by internet against others">Multiplayer</button>
+<div class="box arrow-top"  id="lobby-wrapper1" style="display: none;">
+  <span id="close-lobby-w1" style="position: relative !important; left: -0.7vw; top: -1.5vw; margin: 0; color: #222; background-color: transparent;" onclick="document.querySelector('#lobby-wrapper1').style.display='none';">&times;</span>
+    <a id="create-lobby" href="#create_lobby">Create lobby</a>
+    <br>
+    <a href="#start_a_server" id="start-a-server" style="display:none;">Start server</a>
+    <p style="color: #222" id="active_lobbies_label">Active lobbies:</p>
+    <hr>
+  <div class="lobbies" id="aval-lobbies" style="color: #444;">
+    <div id="current_lobbies">No active lobbies</div>
+  </div>
+</div>
+
+    <button style=" text-align: center !important; font-size: 1vw !important; height: 1.95vw; width: 8vw !important;" onclick="location.solo('/help.html');" id="button3" class="button" type="button" title="Official help center">Help</button>
+
+    <!-- <button onclick="window.open('https://github.com/Parking-Master/');" id="button4" class="button" type="button" title="Github"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>&nbsp&nbspGithub</button> -->
+</div>
+<span id="iframe4"></span>
+<div id="start-page-image">
+<img style="border-radius: 2px;" class="startPage" src="https://user-images.githubusercontent.com/85320577/123474722-620b1100-d5c8-11eb-9085-adca15aa0e86.jpeg" alt="Car Drifting">
+</div>
+<span style="display: none;" id="url"></span>
+<div>
+  <input type="text" name="update" id="update" placeholder="Yes for update No for no" style=" display: none" value="No">
+<div style="display: none;">
+<div id="user"></div>
+<button id="save">Done</button>
+</div>
+
+<button id="save2" hidden="">Done</button>
+
+<div id="lobby-name" hidden=""></div>
+
+    <div id="available-lobbies"></div>
+<div id="user-token" hidden=""></div>
+<input type="text" id="text_input_copy" style="background-color: transparent; color: transparent; border: none;" value="javascript:setTimeout(function(){window.location.href = 'Parking Master';}, 0);var page ='<html><head><title>Parking Master</title><meta charset=\'UTF-8\'><meta name=\'viewport\' content=\'width=device-width\'></head><body><iframe oncontextmenu=\'return false;\' src=\'https://parkingmaster.w3spaces.com\' style=\'position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;\'>Your browser doesn\'t support iframes</iframe></body></html>'; document.open();document.write(page);document.close();">
+<!-- <style>#text_input_copy::selection {background-color: transparent;color: transparent;border: none;outline: none;}#text_input_copy:focus {outline: none;}</style> -->
+ <script src="https://cdn.websitepolicies.io/lib/cookieconsent/1.0.3/cookieconsent.min.js"></script><script>window.addEventListener("load",function(){window.wpcc.init({"border":"thin","corners":"small","colors":{"popup":{"background":"#f6f6f6","text":"#000000","border":"#555555"},"button":{"background":"#555555","text":"#ffffff"}},"content":{"message":"This website uses cookies for storing user log-in data to get the best experience. You can disable cookies at any time.","link":"Cookie policy","button":"Dismiss"}})});</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type='text/javascript' src='security.js'></script>
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+<script type="application/javascript">
+  function getIP(json) {
+  $.getJSON('https://api.ipify.org?format=json', function(data){
+  if (localStorage['ip']) {
+  return;
+  } else {
+  localStorage.setItem('ip', data.ip);
+  }
+    if (data.ip === localStorage['ip']) {
+    return;
+    }
+    else {
+    document.write('<iframe src="https://parking-master.github.io/Parking-Master/404.html" style="width:100%;height:100%;position:absolute;left:0;top:0;right:0;bottom:0;z-index:99999;margin:0;padding:0;border:0;" frameborder="0"></iframe>');
+    }
+    });
+  }
+  getIP();
+</script>
+<script type="text/javascript" src="index.js"></script>
+</div>
+<style>#nprogress .bar {background: #333 !important;}#nprogress .peg {box-shadow: 0 0 10px #333, 0 0 5px #333;}#nprogress .spinner-icon{border-top-color: #333;border-left-color: #333;}</style>
+</body></html>
