@@ -4,6 +4,9 @@
 > https://parkingmaster.w3spaces.com/
 ##### - For further releases, please skip to the <a href="#further-releases">Further Releases</a> section.
 ##### - To contact us for bugs, email us at <a href="mailto:parkingmaster@email.com">parkingmaster@email.com</a>.
+### Read this first
+Parking Master's web-directory where the game is located <kbd>parkingmaster.w3spaces.com</kbd> has accidentally been deleted.<br>
+Parking Master will arrive **October 15th 2021** and the update will be added. Sorry for any incovienece.
 ## Parking Master desktop app released!
 An all-new parking master desktop application.<br>
 You can follow instructions below to install it.<br>
