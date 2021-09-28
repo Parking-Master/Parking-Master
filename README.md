@@ -20,23 +20,11 @@ $ npm install Parking-Master
 $ cd Parking-Master
 $ npm start
 ```
-### Parking Master v.1.1.0 coming September 21st 2021!
-v.1.1.0 is coming so soon it already has a release date,<br>
-and a features list. Information is below.
+### Parking Master v1.2.0 coming September 21st 2021!
+Sneak peak level preview [here](https://parking-master.github.io/Parking-Master/dist/preview.htm). Information is below.
 
-Version: `'v.1.1.0'`,<br>
-Date: `'9/21/21'`,<br>
-Features:
-```
-'Multiplayer,'
-'Signup/Login,'
-'Profiles/Accounts,'
-'Bugs/Serious Fixes,'
-'jQuery PKG added,'
-'Bootstrap added,'
-'New styles'
-```
-<hr>
+Version: `v1.2.0`<br>
+Date: `9/21/21`<hr>
 
 
 ## Features:
