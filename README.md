@@ -48,10 +48,9 @@ Date: `9/21/21`<hr>
 | v.1.0.0 | 8/1/21 |
 | v.1.1.0 | 9/21/21 |
 | v.1.2.1 | 10/5/21 |
-| ....... | --/--/-- |
-<hr>
+| ....... | --/--/-- |<hr>
 
-<img src="header1.png" />
-
+### Liked this project? Check out our other ones:<br>
+<kbd><a href="https://github.com/Parking-Master/No-Time">SecurityJS</a></kbd> | <kbd><a href="https://github.com/Parking-Master/No-Time">No-Time<sup>BETA</sup></a></kbd><br>
 ###### Sources:
 <kbd><a href='https://parkingmaster.w3spaces.com/'>parkingmaster.w3spaces.com</a></kbd> <kbd><a href='index.html'>Parking Master | GitHub</a></kbd>
