@@ -128,7 +128,7 @@ details > summary > li {
 }
 @keyframes slideDecorationBack {
   0% { width: 100%; }
-  100% { width: 0; }
+  100% { width: 0; display:none; }
 }
 details > summary > li::before {
   content: '';
