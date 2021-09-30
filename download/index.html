@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en_US">
+<head>
+    <title>Parking Master</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="subject" content="Parking Master">
+    <meta property="og:title" content="Parking Master">
+    <meta property="og:image" content="favicon.ico">
+    <meta property="og:locale" content="en_US">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Parking-Master/Parking-Master@master/index/styles.min.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/rstacruz/nprogress/nprogress.min.css' />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iRaul/pushy-buttons/css/pushy-buttons.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Parking-Master/Parking-Master@latest/css/extras.min.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.28.2.min.js"></script>
+    <script src="https://external-testing-3.w3spaces.com/swifty.js"></script>
+    <script type="text/javascript" src="https://npmcdn.com/parse@2.1.0/dist/parse.min.js"></script>
+    <script src='https://cdn.jsdelivr.net/gh/rstacruz/nprogress/nprogress.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/platform/1.3.5/platform.min.js"></script>
+    <style>
+       @media screen and (max-width: 580px) {
+           .button-menu-wrapper {
+               position: relative !important;
+               left: 21.6vw !important;
+               top: 6vw !important;
+            }
+            #header-style {
+                font-weight: normal;
+            }
+        }
+        html{-webkit-tap-highlight-color:#f9f9f9;}*::selection{background-color:transparent;color:#999;font-weight:bold;}written{display:none;}#close-lobby-w1{font-size: 2vw; cursor:pointer;}
+    </style>
+    <script>
+        window.scroll=!1,window.ontouchstart=function(o){1==$(o.target).closest("html").length&&(window.scroll=!0)},window.ontouchend=function(){window.scroll=!1},window.ontouchmove=function(o){scroll&&o.preventDefault()};
+        var confirmed=!1;$(document).ready(function(o){window.history&&window.history.pushState&&(window.history.pushState(".",null,"./."),0==confirmed&&(confirmed=!0,o(window).on("popstate",function(){}),confirmed=!1))});
+    </script>
+</head>
+<body>
+<div id="load-cover" style="position:absolute;left:0;top:0;bottom:0;right:0;background:#f9f9f9;margin:0;padding:0;z-index:100000;">
+    <div class="w3-container">
+        <div class="w3-border" style="width:35%;position:absolute;left:50%;margin-left:-15%;top:25%;">
+            <style>
+                .w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before,.w3-cell-row:before,.w3-cell-row:after,.w3-clear:after,.w3-clear:before,.w3-bar:before,.w3-bar:after{content:"";display:table;clear:both}.w3-border{border:1px solid #ccc!important}.w3-333,.w3-hover-333:hover{color:#f9f9f9!important;background-color:#333!important}.w3-container,.w3-panel{padding:0.01em 16px}
+            </style>
+            <div id="progress-bar-inline" class="w3-333" style="max-width:100%;height:3.2552083333333335vw;width:0%"></div>
+        </div><br><span id="load-text" style="position:absolute;top:33%;left:46.5%;font-size:2vw;">Loading...
+        <noscript>
+            <div style="position:absolute;left:0;top:0;right:0;bottom:0;margin:0;background:#f9f9f9;padding:0;">
+            <style>.wrap{padding:40px;text-align:center}.modal > hr{clear:both;margin-top:40px;margin-bottom:40px;border:0;border-top:1px solid #aaa}.modal > h1{font-size:30px;margin-bottom:40px}p{margin-bottom:20px}.btn{background:#333;border:#262626 solid 1px;border-radius:3px;color:#fff;display:inline-block;font-size:14px;padding:8px 15px;text-decoration:none;text-align:center;min-width:60px;position:relative;transition:color .1s ease}.btn:hover{background:#262626}.btn.btn-big{font-size:18px;padding:15px 20px;min-width:100px}.btn-close{color:#333;font-size:30px;text-decoration:none;position:absolute;right:5px;top:0}.btn-close:hover{color:#919191}.modal:before{content:"";display:none;background:rgba(0,0,0,.6);position:fixed;top:0;left:0;right:0;bottom:0;z-index:10}.modal:target:before{display:block}.modal:target .modal-dialog{-webkit-transform:translate(0,0);-ms-transform:translate(0,0);transform:translate(0,0);top:20%}.modal-dialog{background:#fefefe;border:#333 solid 1px;border-radius:5px;margin-left:-200px;position:fixed;left:50%;top:-100%;z-index:11;width:360px;-webkit-transform:translate(0,-500%);-ms-transform:translate(0,-500%);transform:translate(0,-500%);-webkit-transition:-webkit-transform .3s ease-out;-moz-transition:-moz-transform .3s ease-out;-o-transition:-o-transform .3s ease-out;transition:transform .3s ease-out}.modal-body{padding:20px}.modal-footer,.modal-header{padding:10px 20px}.modal-header{border-bottom:#eee solid 1px}.modal-header h2{font-size:20px}.modal-footer{border-top:#eee solid 1px;text-align:right}</style><a id="open-update-modal" href="#modal-one" class="btn btn-big" style="display:none;"></a></div><div class="modal" id="modal-one" aria-hidden="true"> <div class="modal-dialog"> <div class="modal-header"> <h2>Welcome!</h2> </div><div class="modal-body"> <p>We just updated the game! Enjoy new features.</p></div><div class="modal-footer"> <a href="#" class="btn">Close</a> </div></div></div><script>function updateAlert(){if (localStorage['update-alerted']){return;}else{localStorage.setItem('update-alerted', 'yes');setTimeout(function(){document.getElementById('open-update-modal').click();},1000);}}updateAlert();</script>
+            </div>
+        </noscript>
+        </span>
+    </div>
+</div>
+    <script>var width=0;startP=setInterval(function(){if(width>=100){clearInterval(startP);return;}else{width++;document.getElementById('progress-bar-inline').style.width=width+'%';}},1);window.addEventListener('load',function(){if(document.readyState==='complete'||document.readyState==='interactive'){document.querySelector('#load-cover').style.display='none'}});</script>
+<style>.wrap{padding:40px;text-align:center}.modal > hr{clear:both;margin-top:40px;margin-bottom:40px;border:0;border-top:1px solid #aaa}.modal > h1{font-size:30px;margin-bottom:40px}p{margin-bottom:20px}.btn{background:#333;border:#262626 solid 1px;border-radius:3px;color:#fff;display:inline-block;font-size:14px;padding:8px 15px;text-decoration:none;text-align:center;min-width:60px;position:relative;transition:color .1s ease}.btn:hover{background:#262626}.btn.btn-big{font-size:18px;padding:15px 20px;min-width:100px}.btn-close{color:#333;font-size:30px;text-decoration:none;position:absolute;right:5px;top:0}.btn-close:hover{color:#919191}.modal:before{content:"";display:none;background:rgba(0,0,0,.6);position:fixed;top:0;left:0;right:0;bottom:0;z-index:10}.modal:target:before{display:block}.modal:target .modal-dialog{-webkit-transform:translate(0,0);-ms-transform:translate(0,0);transform:translate(0,0);top:20%}.modal-dialog{background:#fefefe;border:#333 solid 1px;border-radius:5px;margin-left:-200px;position:fixed;left:50%;top:-100%;z-index:11;width:360px;-webkit-transform:translate(0,-500%);-ms-transform:translate(0,-500%);transform:translate(0,-500%);-webkit-transition:-webkit-transform .3s ease-out;-moz-transition:-moz-transform .3s ease-out;-o-transition:-o-transform .3s ease-out;transition:transform .3s ease-out}.modal-body{padding:20px}.modal-footer,.modal-header{padding:10px 20px}.modal-header{border-bottom:#eee solid 1px}.modal-header h2{font-size:20px}.modal-footer{border-top:#eee solid 1px;text-align:right}</style><a id="open-update-modal" href="#modal-one" class="btn btn-big" style="display:none;"></a></div><div class="modal" id="modal-one" aria-hidden="true"> <div class="modal-dialog"> <div class="modal-header"> <h2>Welcome!</h2> </div><div class="modal-body"> <p>We just updated the game! Enjoy new features.</p></div><div class="modal-footer"> <a href="#" class="btn">Close</a> </div></div></div><script>function updateAlert(){if (localStorage['update-alerted']){return;}else{localStorage.setItem('update-alerted', 'yes');setTimeout(function(){document.getElementById('open-update-modal').click();},1000);}}updateAlert();</script>
+    <script>location.search.includes("?timeout-exceeded=true")&&alert("Oops! A timeout exceeded of over "+100*Math.ceil(Number(new URLSearchParams(location.search).get("timeout-time"))/100)+'ms. Here is what you can do:\n\t• Try again in a few minutes. - Website may have too much traffic\n\t• Check your network connection.\n\t• If javascript is disabled, enable it in your browser.');</script> <iframe id="points___" src="points-counter.htm?"></iframe>
+    <script>document.getElementById("points___").setAttribute("src","points-counter.htm?pts="+new URLSearchParams(window.location.search).get("pts")+"&k="+new URLSearchParams(window.location.search).get("k")+"&s="+new URLSearchParams(window.location.search).get("s")),window.addEventListener("message",function(e){e.data});</script>
+    <div hidden>
+        <div><input id="input" placeholder="message" hidden=""><input type="button" id="input-button-submit" value="Drive"></div><input type="button" id="input-button-submit-2" value="Drive"></div>
+    <div id="box" hidden></div><input id="time-remain-before" type="number" hidden/> <input id="time-remain" type="text" hidden/> <input type="text" id="time_remain_start" hidden/>
+    <h3 style="z-index: 2; background-color: white; border-top: 0.3255208333333333vw solid white; border-left: 0.13020833333333334vw solid black; border-bottom: 0.13020833333333334vw solid black; border-right: 0.13020833333333334vw solid black; width: 20%; overflow: auto !important; position: absolute !important; left: 50vw; margin-left: -10vw; font-family: 'Sansation', Arial; top: 1vw;cursor:default !important;" id="header-style">Parking Master</h3>
+    <div class="banner-wrapper" style="border-bottom: 0.13020833333333334vw solid black; width: 100%; margin: 0; position: absolute; left: 0; top: 0; z-index: 1; background-color: white; height: 3vw;"> <span id="banner-contents"><img style="margin: 0.2vw;position: absolute; left: 0vw; border-radius: 9999px; width: 2.5vw;" onclick="location.solo('/')" id="app-icon" src="https://user-images.githubusercontent.com/85320577/125539201-f967db44-f34e-4a43-a51a-b1b84708dce4.jpeg"/><span id="login-buttons-signup-2"><button style="font-size: 0.8vw; height: 2.1vw; width: 5.208333333333333vw; position: relative;left: 3.90625vw; top: 30%; margin-top: -8px;" class="pushy__btn pushy__btn--sm pushy__btn--simple" onclick="$run(opensignup());">Sign up</button><button style="font-size: 0.8vw;width: 5.208333333333333vw; height: 2.1vw;position: relative;left: 7.8125vw; top: 30%; margin-top: -8px;" onclick="$run(openlogin());" class="pushy__btn pushy__btn--sm pushy__btn--simple">Log in</button></span>
+        <details id="user-info--summary" title="User info">
+            <summary>
+                <li data-tooltip="<a id='Edit-picture' href='/account.html#edit-picture'>Edit picture</a>" data-tooltip-persistent="true" data-hide-delay="10" data-tooltip-stickto="left" data-tooltip-color="black" data-tooltip-animate-function="foldin" id="profile-pic"></li><span id="username"></span>
+                <hr/> </summary>
+            <div class="user-info --info" style="font-size: 0.6vw;"> <span class="user-email --info"></span> <br><span class="user-name --info"></span>
+                <hr>
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ytiurin/html5tooltipsjs/html5tooltips.min.css">
+                <script src="https://cdn.jsdelivr.net/gh/ytiurin/html5tooltipsjs/html5tooltips.min.js"></script>
+                <script>
+                    setInterval(function(){document.querySelector("details").hasAttribute("open")?(document.querySelector("details").querySelector("summary").style.borderRight="none",document.querySelector("details").querySelector("hr").style.visibility="hidden"):(document.querySelector("details").querySelector("summary").style.borderRight="0.1vw solid #222",document.querySelector("details").querySelector("hr").style.visibility="visible")},10),document.querySelector("#username").addEventListener("mouseenter",function(){document.querySelector("details").querySelector("summary").querySelector("hr").style.animation="slideDecoration 1s",document.querySelector("details").querySelector("summary").querySelector("hr").style.animationFillMode="forwards",this.addEventListener("mouseout",function(){document.querySelector("details").hasAttribute("open")||(document.querySelector("details").querySelector("summary").querySelector("hr").style.animation="slideDecorationBack .6s")})});
+                </script>
+                <style>
+                    label{display:inline-block;width:5em}
+                </style> <button onclick="openProfile()" class="pushy__btn pushy__btn--md pushy__btn--simple">Profile</button> <button onclick="openAccount()" class="pushy__btn pushy__btn--md pushy__btn--clean">Account</button> </div>
+        </details>
+        <div id="points-value"><span id="pts-absolute"><span id="pts">0</span> <span id="pts-follower">PTS</span></span>
+            <script>
+                setInterval(function(){document.getElementById("pts").innerHTML=document.getElementById("points___").contentDocument.getElementById("pts-index").innerHTML},500);
+            </script>
+        </div>
+        </span>
+    </div><audio style="position: absolute; top: 20%" id="click-sound-mp3" src="https://www.myinstants.com/media/sounds/minecraft_click.mp3"></audio>
+    <div id="score"></div>
+    <div id="aud_wdgt-html8184"> <audio id="menu-audio" src="https://user-images.githubusercontent.com/85320577/125461243-a9dd91b0-0eb5-4e4b-8f02-a1fd252fa5f2.mov" loop autoplay></audio> </div><span style="display: none;" id="aval-score"></span>
+    <div class="button-menu-wrapper" style="position: relative; left: 26vw; top: 10vw;" id="NEW_BUTTONS"> <button style="border-width: 0.15vw !important; text-align: center !important; font-size: 1vw !important; height: 1.95vw; width: 8vw !important;" onclick="window.onbeforeunload=function(e){e.preventDefault();return 'Data will be saved before leaving.'};setTimeout(replaceContent, 2000);fadeTrans();" id="button" class="button" type="button" title="Start the game">Start</button>
+    <button style="border-width: 0.15vw !important; text-align: center !important; font-size: 1vw !important; height: 1.95vw; width: 8vw !important;" onclick="location.solo('/trending-games.html');" id="button1" class="button" type="button" title="Trending games for your entertainment">Games</button>
+    <button style="border-width: 0.15vw !important; text-align: center !important; font-size: 1vw !important; height: 1.95vw; width: 8vw !important;" onclick="availableLobbies();document.getElementById('click-sound-mp3').play();" id="button2" class="button" type="button" title="Play by internet against others">Multiplayer</button>
+        <div class="box arrow-top" id="lobby-wrapper1" style="display: none;"> <span id="close-lobby-w1" style="position: relative !important; left: -0.7vw; top: -1.5vw; margin: 0; color: #222; background-color: transparent;" onclick="document.querySelector('#lobby-wrapper1').style.display='none';">&times;</span> <a id="create-lobby" href="#create_lobby">Create lobby</a> <br><a href="#start_a_server" id="start-a-server" style="display:none;">Start server</a>
+            <p style="color: #222" id="active_lobbies_label">Active lobbies:</p>
+            <hr>
+            <div class="lobbies" id="aval-lobbies" style="color:#444;">
+                <div id="current_lobbies">No active lobbies</div>
+            </div>
+        </div>
+    <button style="border-width: 0.15vw !important;text-align: center !important; font-size: 1vw !important; height: 1.95vw; width: 8vw !important;" onclick="location.solo('/help.html');" id="button3" class="button" type="button" title="Official help center">Help</button> </div><span id="iframe4"></span>
+    <div id="start-page-image"> <img style="border-radius: 0.2vw;outline-width:0.4vw;border-width:0.3vw;" class="startPage" src="https://user-images.githubusercontent.com/85320577/123474722-620b1100-d5c8-11eb-9085-adca15aa0e86.jpeg" alt="Car Drifting"> </div><span id="url" hidden></span>
+    <div id="user" hidden></div><button id="save" hidden>Done</button> </div><button id="save2" hidden>Done</button>
+    <div id="lobby-name" hidden></div>
+    <div id="available-lobbies"></div>
+    <div id="user-token" hidden></div>
+    <script type="text/javascript" src="source/index.js"></script>
+    </div>
+    <style>#nprogress .bar{background: #333 !important;}#nprogress .peg{box-shadow: 0 0 10px #333, 0 0 5px #333;}#nprogress .spinner-icon{border-top-color: #333;border-left-color: #333;}</style>
+    <script>Parse.initialize("YzfPeLuKx1JmcXyeJ3qL36fmphqhzv7Ke9mXzmFv","byPMDYRSUxmJ8GtwIiBZTebeL8qZB7geFXDLcJju"),Parse.serverURL="https://parseapi.back4app.com/";var pts,currentUser=Parse.User.current();null!=typeof currentUser.get("points")&&null!=typeof currentUser.get("points")&&"0"!=typeof currentUser.get("points")&&void 0!==currentUser.get("points")&&"null"!=typeof currentUser.get("points")||currentUser.save({points:"0"}),pts=setInterval(function(){"1"===document.querySelector("#pts").innerText&&("PT"===document.querySelector("#pts-follower").innerText?clearInterval(pts):document.querySelector("#pts-absolute").textContent=document.querySelector("#pts-absolute").textContent.replace(/PTS/g,"PT"))},100);</script>
+</body>
+</html>
