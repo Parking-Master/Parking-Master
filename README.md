@@ -20,7 +20,7 @@ $ npm install Parking-Master
 $ cd Parking-Master
 $ npm start
 ```-->
-### Parking Master v1.2.0 coming September 21st 2021!
+### Parking Master v1.2.0 coming <strike>September 21st 2021</strike> October 14th 2021!
 Sneak peak level preview [here](https://parking-master.github.io/Parking-Master/dist/preview.htm). Information is below.
 
 Version: `v1.2.0`<br>
