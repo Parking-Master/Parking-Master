@@ -88,7 +88,7 @@ function parkDetector() {
         location.replace("/lvl5/.html"+ifDoublePoints);
     }), setInterval(function() {
         document.querySelector(".swal-button").style.backgroundColor = "#6cc22e"
-    }, 100)) : 10 < x && y <= 35 && 10 <= y && 0 < x && 0 < y ? (swal({
+    }, 100)) : 10 < x && y <= 35 && 10 <= y && 0 < x && 0 < y && x < 65 ? (swal({
         icon: "https://cdn.jsdelivr.net/gh/Parking-Master/Parking-Master@latest/game/blue-checkmark.png",
         title: e,
         text: "+1 Point(s) for blue spot. Click Next to continue.",
