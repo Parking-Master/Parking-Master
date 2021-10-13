@@ -1,6 +1,6 @@
 # Parking Master
-> Parking Master is a fun web-game, and desktop application.<br>
-> You can play it by installing the desktop app or going to<br>
+> Parking Master is a fun web-game.<br>
+> You can play it by going to<br>
 > https://parkingmaster.w3spaces.com/
 ##### - For further releases, please skip to the <a href="#further-releases">Further Releases</a> section.
 ##### - To contact us for support, email us at <a href="mailto:parkingmaster@email.com">parkingmaster@email.com</a>.
@@ -66,5 +66,5 @@ Minor security added.
 <kbd><a href="https://github.com/Parking-Master/Security.js">SecurityJS</a></kbd> | <kbd><a href="https://github.com/Parking-Master/SecurityJS.128">SecurityJS.128<sup>b</sup></a></kbd> | <kbd><a href="https://github.com/Parking-Master/No-Time">No-Time<sup>BETA</sup></a></kbd> | <kbd><a href="https://github.com/Parking-Master/Simplet-Button">Simple-Button.CSS</a></kbd><br>
 
 ###### Copyright (c) 2021 Parking Master, all rights reserved. By using our site and online features, you agree to our [Terms of Use]().
-### License
-<hr>MIT
+License<br>
+[MIT](LICENSE.md)
