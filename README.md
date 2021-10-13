@@ -5,7 +5,7 @@
 ##### - For further releases, please skip to the <a href="#further-releases">Further Releases</a> section.
 ##### - To contact us for bugs, email us at <a href="mailto:parkingmaster@email.com">parkingmaster@email.com</a>.
 ### Read this first
-Parking Master's web-directory where the game is located <kbd>parkingmaster.w3spaces.com</kbd> has accidentally been deleted.<br>
+Parking Master's main directory where the game is located <kbd>parkingmaster.w3spaces.com</kbd> has accidentally been deleted.<br>
 Parking Master will arrive **October 14th 2021** and the update will be added. Sorry for any inconvenience.
 <!--## Parking Master desktop app released!
 An all-new parking master desktop application.<br>
@@ -20,7 +20,7 @@ $ npm install Parking-Master
 $ cd Parking-Master
 $ npm start
 ```-->
-### Parking Master v1.2.0 coming <strike>September 21st 2021</strike> October 14th 2021!
+### Parking Master v1.2.0 coming October 14th 2021! (Tomorrow! 🎉)
 Sneak peak level preview [here](https://parking-master.github.io/Parking-Master/dist/preview.htm). Information is below.
 
 Version: `v1.2.0`<br>
