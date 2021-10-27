@@ -1,9 +1,13 @@
 # Parking Master
-> Parking Master is a fun web-game.<br>
+> Parking Master is a fun 2d web game.<br>
 > You can play it by going to<br>
 > https://parkingmaster.w3spaces.com/
 
-### What's new?
+### New! "The Playground"
+The new Playground center is where you can test upcoming updates and cars from the game. [Sign up](https://parkingmaster.w3spaces.com/signup.html) now to join.
+Test out cars without passing levels in the playground. Try testing out [The Tesla Model S Plaid](https://parkingmaster.w3spaces.com/playground/cars/Tesla.htm)
+
+### Updated > What's new?
 Keep your points saved everywhere you go, or every device you use. New signup and login.<br>
 
 Play by internet against others in our new multiplayer game feature!
