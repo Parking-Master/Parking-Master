@@ -33,7 +33,7 @@ user.signUp = function(e,p,se,er) {
 	  uframe.remove();
 	  if (event.data == "false") {
 	  var subject = encodeURIComponent(`${location.hostname.split('')[0].toUpperCase()+location.hostname.split('.')[0].replace(location.hostname.split('')[0], '')} - Verify email`);
-	  var msg = encodeURIComponent('Verify your email (' + _em + ') by clicking the link below.\n\n' + location.protocol + '//' + location.host + location.pathname + '/?email=' + _em + '&pass=' + _pass + '&redirect=' + encodeURI(location.href) + '%23verified-email\n\nRegards,\n-' + location.hostname.split('')[0].toUpperCase()+location.hostname.split('.')[0].replace(location.hostname.split('')[0], ''));
+	  var msg = encodeURIComponent('Verify your email (' + _em + ') by clicking the link below.\n\n' + location.protocol + '//' + location.host + location.pathname + '?email=' + _em + '&pass=' + _pass + '&redirect=' + encodeURI(location.href) + '%23verified-email\n\nRegards,\n-' + location.hostname.split('')[0].toUpperCase()+location.hostname.split('.')[0].replace(location.hostname.split('')[0], ''));
 	  eframe.src = `${o.serverURL}/email-send.php?to=${_em}&subject=${subject}&msg=${msg}`;
 	  eframe.style.display = 'none';
 	  document.body.appendChild(eframe);
