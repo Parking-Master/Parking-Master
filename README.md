@@ -4,7 +4,7 @@
 > https://parkingmaster.w3spaces.com/
 
 ### New! "The Playground"
-The new Playground center is where you can test upcoming updates and cars from the game. [Sign up](https://parkingmaster.w3spaces.com/signup.html) now to join.
+The new Playground center is where you can test upcoming updates and cars from the game. [Sign up](https://parkingmaster.w3spaces.com/signup.html) now to join.<br>
 Test out cars without passing levels in The Playground. Try testing out [The Tesla Model S Plaid](https://parkingmaster.w3spaces.com/playground/cars/Tesla.htm)
 
 ### New! "3D MiniGames"
