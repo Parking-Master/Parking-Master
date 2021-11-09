@@ -7,6 +7,12 @@
 The new Playground center is where you can test upcoming updates and cars from the game. [Sign up](https://parkingmaster.w3spaces.com/signup.html) now to join.
 Test out cars without passing levels in The Playground. Try testing out [The Tesla Model S Plaid](https://parkingmaster.w3spaces.com/playground/cars/Tesla.htm)
 
+### New! "3D MiniGames"
+Using [Three.js](https://threejs.org/), we've studied the ways we can make parking a virtual car more realistic.
+You can now test out 3D inventions in [The Playground](https://parkingmaster.w3spaces.com/playground/) as you wait for new 3D MiniGames to arrive.
+
+[Run a test now](https://parkingmaster.w3spaces.com/playground/3D/ThreeTest.htm)
+
 ### Updated > What's new?
 Keep your points saved everywhere you go, or every device you use. New signup and login.<br>
 
