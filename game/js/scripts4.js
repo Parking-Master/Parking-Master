@@ -85,7 +85,7 @@ function parkDetector() {
         closeOnEnterKey: !0
     }).then(function() {
         var ifDoublePoints=localStorage['dbl_pts']?'?dbl_pts=true&access_key=HO0wjY6zsNLY5cKwPBgP':'';
-        location.replace("/lvl5/.html"+ifDoublePoints);
+        location.replace("/lvl5.html"+ifDoublePoints);
     }), setInterval(function() {
         document.querySelector(".swal-button").style.backgroundColor = "#6cc22e"
     }, 100)) : 10 < x && y <= 35 && 10 <= y && 0 < x && 0 < y && x < 65 ? (swal({
@@ -221,7 +221,7 @@ var ifLUndefined=setInterval(function(){
         return;
     } else {
       clearInterval(ifLUndefined);
-      location.replace("/?pts="+String(ptsToAdd)+"&k=6150645367556B58703273357638792F423F4528482B4D6251655468576D597133743677397A24432646294A404E635266556A586E327234753778214125442A&s=FcHeMhPkRpUrWtZw3y5B8DaGdJfMjQmSpVs");
+      top.location.replace("/?pts="+String(ptsToAdd)+"&k=6150645367556B58703273357638792F423F4528482B4D6251655468576D597133743677397A24432646294A404E635266556A586E327234753778214125442A&s=FcHeMhPkRpUrWtZw3y5B8DaGdJfMjQmSpVs");
     }
 })
     }), document.querySelector(".swal-button").style.backgroundColor = "#222", document.querySelector(".swal-icon").style.width = "20%", alerted = !1)
