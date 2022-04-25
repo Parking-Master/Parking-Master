@@ -100,10 +100,8 @@ $('#steering').mousemove(function(e) {
     $('#steering').unbind();
     if ($('#transform_rotation_over100').val() > 40){
     window.parent.postMessage('mouseRightUp()', '*');
-    mouseRightUp();
   } else if ($('#transform_rotation_over100').val() < -50){
     window.parent.postMessage('mouseLeftUp()', '*');
-    mouseLeftUp();
   }
     steerpress();
   });
