@@ -3,6 +3,39 @@
 > You can play it by going to<br>
 > https://parkingmaster.w3spaces.com/
 
+### New! "Parking Master 2.0"
+To celebrate Parking Master's 1 year anniversary and high growth rate, we decided to
+<br>
+create Parking Master 2.0: The all new upgraded Parking Master.
+<br>
+<br>
+Features include:
+- New start page
+- New levels
+- New UI/Controls
+- New multiplayer feature
+- New desktop app
+- New bordem-breaker-browser extension
+- New security
+- New server/database
+- New contributions
+- New GitHub repository
+- New chat in multiplayer
+- New 3D/2D switcher on all levels
+- New 3D support
+- New First Person / Second Person / Third Person viewer
+- New point system added
+- New login/signup
+- New support
+- New pages
+- New faster page load speed
+- New domain (parkingmaster.tk)
+- New camera hand gesture feature
+
+<img src="https://github.com/Parking-Master/Parking-Master-2.0/blob/main/analytics_growth.png" width="400">
+
+A lot of things have been added. You can discover all of them at: <kbd>www.parkingmaster.tk</kbd>
+
 ### New! "The Playground"
 The new Playground center is where you can test upcoming updates and cars from the game. [Sign up](https://parkingmaster.w3spaces.com/signup.html) now to join.<br>
 Test out cars without passing levels in The Playground. Try testing out [The Tesla Model S Plaid](https://parkingmaster.w3spaces.com/playground/cars/Tesla.htm)
