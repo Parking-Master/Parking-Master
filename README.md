@@ -5,7 +5,7 @@
 
 <img src="https://parkingmaster.tk/images/celebration.png">
 
-## <span style="text-shadow:0 0 #333;color:transpar ent;">🎉</span> Parking Master's 1 year anniversary is coming up!
+## <span style="text-shadow:0 0 #333;color:transparent;">🎉</span> Parking Master's 1 year anniversary is coming up!
 To celebrate, our team built a surprise in all that time.
 ### New! "Parking Master 2.0"
 To celebrate Parking Master's 1 year anniversary and high growth rate, we decided to
